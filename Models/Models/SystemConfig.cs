@@ -14,7 +14,11 @@ namespace Models.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]//cách để nó tự tăng
         public int ID { set; get; }
+        [Required]
+        [MaxLength(100)]
         public string Code { set; get; }
+        [Required]
+        [MaxLength(100)]
         public string ValuesString { set; get; }
         public int ValuenInt { set; get; }
     }

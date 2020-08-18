@@ -16,9 +16,16 @@ namespace Models.Models
         public int ID { set; get; }
 
         [Required]
+        [MaxLength(100)]
         public string Name { set; get; }
+        [Required]
+        [MaxLength(100)]
         public string Content { set; get; }
+        [Required]
+        [MaxLength(100)]
         public string MeteKeyword { set; get; }
+        [Required]
+        [MaxLength(100)]
         public string MetaDescription { set; get; }
 
         [Required]

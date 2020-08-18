@@ -15,23 +15,34 @@ namespace Models.Models
         public int ID { set; get; }
 
         [Required]
+        [MaxLength(100)]
         public string CustomerName { set; get; }
 
         [Required]
+        [MaxLength(100)]
         public string CustomerAddress { set; get; }
 
         [Required]
+        [MaxLength(100)]
         public string CustomerEmail { set; get; }
 
         [Required]
+        [MaxLength(20)]
         public string CustomerPhone { set; get; }
 
         [Required]
+        [MaxLength(100)]
         public string CustomerMessage { set; get; }
 
         public DateTime CreatedDate { set; get; }
+        [Required]
+        [MaxLength(100)]
         public string CreatedBy { set; get; }
+        [Required]
+        [MaxLength(100)]
         public string PaymentMothod { set; get; }
+        [Required]
+        [MaxLength(100)]
         public string PaymentStatus { set; get; }
         public bool Status { set; get; }
         public virtual IEnumerable<OrderDetail> OrderDetails { set; get; }

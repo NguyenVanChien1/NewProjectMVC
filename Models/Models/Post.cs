@@ -19,11 +19,16 @@ namespace Models.Models
         public string Name { set; get; }
 
         [Required]
+        [MaxLength(100)]
         public string Alias { set; get; }
         public int CategoryID { set; get; }
         [ForeignKey("CategoryID")]
         public virtual PostCategorie PostCategorie { set; get; }
+        [Required]
+        [MaxLength(100)]
         public string Description { set; get; }
+        [Required]
+        [MaxLength(100)]
         public string Content { set; get; }
         public bool HomeFlag { set; get; }
         public bool HotFlag { set; get; }

@@ -16,6 +16,7 @@ namespace Models.Models
         public int ID { set; get; }
 
         [Required]
+        [MaxLength(100)]
         public string Name { set; get; }
 
         [Required]

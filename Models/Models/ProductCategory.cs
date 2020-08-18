@@ -17,10 +17,14 @@ namespace Models.Models
         public int ID { set; get; }
 
         [Required]
+        [MaxLength(250)]
         public string Name { set; get; }
 
         [Required]
+        [MaxLength(100)]
         public string Alias { set; get; }
+        [Required]
+        [MaxLength(250)]
         public string Description { set; get; }
         public int? ParentID { set; get; }
         public int?DisplayOrder { set; get; }

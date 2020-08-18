@@ -18,9 +18,11 @@ namespace Models.Models
         public int ID { set; get; }
 
         [Required]
+        [MaxLength(250)]
         public string Name { set; get; }
 
         [Required]
+        [MaxLength(250)]
         public string Alias { set; get; }
         public string CategoryID { set; get; }
         public string Image { set; get; }
@@ -29,6 +31,8 @@ namespace Models.Models
         public decimal? PromotionPrice { set; get; }
         public int? Warranty { set; get; }
         public string Description { set; get; }
+        [Required]
+        [MaxLength(250)]
         public string Content { set; get; }
         public bool? HomeFlag { set; get; }
         public bool? HotFlag { set; get; }

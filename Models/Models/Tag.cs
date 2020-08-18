@@ -15,6 +15,7 @@ namespace Models.Models
         public string ID { set; get; }
 
         [Required]
+        [MaxLength(100)]
         public string Name { set; get; }
         public string Type { set; get; }
         public virtual IEnumerable<PostTag> PostTags { set; get; }
